@@ -510,7 +510,7 @@
                     <tbody>
                         <tr>
                             <td><strong>총 파라미터</strong></td>
-                            <td>402B</td>
+                            <td>400B</td>
                             <td>235B</td>
                             <td>LLaMa 4 더 큰 모델</td>
                         </tr>
@@ -528,14 +528,14 @@
                         </tr>
                         <tr>
                             <td><strong>컨텍스트 길이</strong></td>
-                            <td>64K</td>
-                            <td><strong>128K</strong></td>
-                            <td><strong>Qwen3 2배 더 길어</strong></td>
+                            <td>512K ~1M</td>
+                            <td><strong>기본 32K 토큰, YaRN 확장 시 최대 131K</strong></td>
+                            <td><strong>LLama 4-Maverick이 더 김</strong></td>
                         </tr>
                         <tr>
                             <td><strong>릴리스 일자</strong></td>
-                            <td>2024년 12월</td>
-                            <td><strong>2025년 4월</strong></td>
+                            <td>2025년 4월 5일</td>
+                            <td><strong>2025년 4월 28~29일</strong></td>
                             <td><strong>Qwen3 더 최신</strong></td>
                         </tr>
                     </tbody>
@@ -754,7 +754,7 @@
 
             <h3>검토 일정</h3>
             <ul>
-                <li><strong>1차 기술 검토</strong>: 6월 10일-25일 (현재 진행 중)</li>
+                <li><strong>1차 기술 검토</strong>: 6월 2일-25일 (현재 진행 중)</li>
                 <li><strong>병렬 테스트</strong>: 7월 1일-8월 15일</li>
                 <li><strong>최종 모델 결정</strong>: 8월 31일</li>
                 <li><strong>시스템 구축</strong>: 9월-10월</li>
@@ -903,6 +903,7 @@
                 <li>세부 업무 매뉴얼 미포함: 부서별 특화 업무 가이드</li>
                 <li>최신 정보 반영 지연: 조직 개편, 규정 변경 사항</li>
                 <li>시스템 접속 방법 등 실무 정보 부족</li>
+                <li>복잡한 문서에 대한 미흡한 파싱, 전처리 등</li>
             </ul>
 
             <h5>2. AI 모델 성능 한계 (20.3%)</h5>
@@ -918,6 +919,11 @@
                 <li>업무/비업무 구분 실패</li>
                 <li>개인정보 질의 필터링 부족</li>
                 <li>문서 카테고리 자동 분류 오류</li>
+            </ul>
+            
+            <h5>4. 멀티턴 이슈 (etc)</h5>
+            <ul>
+                <li>싱글턴인데, 원하는 답변이 나올때까지 질의를 해서 오류률이 높아짐</li>
             </ul>
 
             <!-- 목표 달성 로드맵 차트 -->
